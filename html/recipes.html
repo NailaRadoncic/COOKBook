@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Recipes</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <header>
+        <h1>COOKBook</h1>
+        <h2>All Recipes</h2>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/html/order.html">Order Here</a></li>
+                <li><a href="/html/favorites.html">Favorites</a></li>
+                <li><a href="/html/reviews.html">Reviews</a></li>
+                <li><a href="/html/index.html">Home Page</a></li>
+                <li><a href="/html/cart.html">Shopping cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Bar -->
+    <section id="search">
+        <input type="text" id="search-bar" placeholder="Search recipes...">
+        <button id="search-btn">🔍 Search</button>
+    </section>
+
+    <!-- Filter Options -->
+    <section id="filters">
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="all">All</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="dessert">Dessert</option>
+        </select>
+
+        <label for="cuisine">Cuisine:</label>
+        <select id="cuisine">
+            <option value="all">All</option>
+            <option value="italian">Italian</option>
+            <option value="french">French</option>
+            <option value="indian">Indian</option>
+            <option value="mediterranean">Mediterranean</option>
+        </select>
+    </section>
+
+    <!-- Recipe Listing -->
+    <section id="recipes">
+        <h2>Browse Recipes</h2>
+        <div class="recipe-container">
+            <div class="recipe-card">
+                <img src="images/spaghetti.jpg" alt="Spaghetti Carbonara">
+                <h3>Spaghetti Carbonara</h3>
+                <p>Classic Italian pasta with eggs, cheese, pancetta, and black pepper.</p>
+                <a href="recipe-detail.html?id=1" class="view-recipe">View Recipe</a>
+            </div>
+
+            <div class="recipe-card">
+                <img src="images/pancakes.jpg" alt="Fluffy Pancakes">
+                <h3>Fluffy Pancakes</h3>
+                <p>Soft and delicious pancakes perfect for breakfast.</p>
+                <a href="recipe-detail.html?id=2" class="view-recipe">View Recipe</a>
+            </div>
+
+            <div class="recipe-card">
+                <img src="images/curry.jpg" alt="Indian Chicken Curry">
+                <h3>Indian Chicken Curry</h3>
+                <p>Rich and flavorful curry with aromatic spices.</p>
+                <a href="recipe-detail.html?id=3" class="view-recipe">View Recipe</a>
+            </div>
+
+            <!-- Add more recipes here -->
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <section id="pagination">
+        <button id="prev-page">← Previous</button>
+        <span>Page 1</span>
+        <button id="next-page">Next →</button>
+    </section>
+
+    <footer>
+        <p>© 2025 COOKBook Website. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("search-btn").addEventListener("click", function() {
+            alert("Search feature coming soon!");
+        });
+
+        document.getElementById("prev-page").addEventListener("click", function() {
+            alert("Previous Page");
+        });
+
+        document.getElementById("next-page").addEventListener("click", function() {
+            alert("Next Page");
+        });
+    </script>
+
+</body>
+</html>
+

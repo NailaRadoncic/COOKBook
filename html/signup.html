@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Cookbook Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>COOKBook</h1>
+
+  <nav class="navbar">
+    <ul>
+        <li><a href="/html/favorites.html">Favorites</a></li>
+        <li><a href="/html/reviews.html">Reviews</a></li>
+        <li><a href="/html/order.html">Order Here</a></li>
+        <li><a href="/html/index.html">Home Page</a></li>
+        <li><a href="/html/cart.html">Shopping cart</a></li>
+    </ul>
+</nav>
+</header>
+
+  <!-- Sign Up Form -->
+  <main>
+    <section class="signup">
+      <h2>Create Your Account</h2>
+      <form action="/signup" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <!-- Google reCAPTCHA -->
+        <div class="g-recaptcha" data-sitekey="6LeDv-QqAAAAACMWnN-069Q94bmpCcWfQJU8E9l4"></div> 
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="login.html">Log In</a></p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 COOKBook Website. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
